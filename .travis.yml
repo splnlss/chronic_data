@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: KCP1vHnhCJ32PJW8Ik2ziY4d+SNPApwWrSj3JxxMnSrSZw/4SpzQxgD5uRhzgwj4809UgLqww+Ha68jPKOKHvB6bWfvuMkoGZl2uOkVkzL4Ige5kbTwLJgwkzgfgWZ6m2kwCwQqzlS8jGQcpwbcpqaFWlbeBjtFb97Tcx6rftxdVzV54IcaE8AJ+bu+lNaGB6xtSQXlPWMxv+FUNWpDo/nKlJH/WFe86s1Romjmp7k2c+EdxINXj8U3us4+xKPrNrMEvZvivmMbMGEkEQ3amfVfoJoD6jxpknCCJat60YAj1EZ1exZ/uqMXTk+WSGap7Gq3U3swrn/jjpzWBKIelAk/ci5ODYV/aqi/z9EMaLThVo92oiY65f6ugKxfG/rej6SxgEjOZ7owkA8pPX4NrneqvyTPs5p0cGH5EY3sXZMdxAUa274ZvW41b9ZEPmJ3OVuAK150mzB1Wwfx6Iq6ACnrKTm0v5iYg8xWqYoc++vncfIP/Wa85njhaZ/dWvxCQIRCRG0g1D5Y6iYAbrCIbte39VvqDjCZvqmMj3EVFqW0kctO59iYSbzhdoSF4V/spCQqH0I83mO/XHqen+4o1EX8vSbZe4hwYTKZ5wfqAVnjJdQzdNeCj6AZfC0ElpdlfmoKLScKKYGOcOiV8bXkV5fAHfJ/RE04qCFiSkjw0Keg=
+  app: chronic-data
+  on:
+    repo: splnlss/chronic_data
