@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import './dashboard.css';
 
 class Dashboard extends Component {
@@ -7,7 +7,7 @@ class Dashboard extends Component {
     return (
       <div className="dashboard">
         <header className="header">
-          // <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="logo" alt="Chronic Data Logo" />
           <h1 className="header-title">Chronic Data Society</h1>
         </header>
         <p className="header-intro">
