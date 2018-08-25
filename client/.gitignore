@@ -1,11 +1,5 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
-# UNSURE WHAT THIS IS!!
-cra-server-ex.graffle
-
-# assets
-/assets
-
 # dependencies
 /node_modules
 
