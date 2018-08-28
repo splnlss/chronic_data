@@ -15,3 +15,5 @@ deploy:
   app: chronic-data
   on:
     repo: splnlss/chronic_data
+services:
+  - mongodb
