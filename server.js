@@ -7,10 +7,9 @@ const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 
 const {DATABASE_URL, PORT} = require('./config')
-const {router:reviewRouter} = require('./review')
-const {router:userRouter} = require('./user')
-const {router:yelpRouter} = require('./yelp')
-const { router: authRouter, localStrategy, jwtStrategy } = require('./auth');
+// const {router:reviewRouter} = require('./review')
+// const {router:userRouter} = require('./user')
+// const { router: authRouter, localStrategy, jwtStrategy } = require('./auth');
 // require models
 
 const app = express()
