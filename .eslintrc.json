@@ -3,6 +3,8 @@
   "parser": "babel-eslint",
   "rules": {
     "array-bracket-spacing": [2, "always"],
+    "func-name-matching": ["error", "never"],
+    "implicit-arrow-linebreak": ["error", "never"],
     "jsx-quotes": [1, "prefer-single"],
     "jsx-a11y/no-static-element-interactions": 0,
     "max-len": ["error", { "code": 80, "ignoreTrailingComments": true }],

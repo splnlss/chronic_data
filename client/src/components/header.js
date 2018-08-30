@@ -2,6 +2,10 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import './dashboard.css'
 import './header.css'
+import Main from "./main";
+import Contact from "./contact";
+import AddDocument from './addDocument';
+import AddVitals from './addVitals';
 import logo from '../images/logo.svg';
 
 export default function Header(props){
@@ -19,7 +23,10 @@ return (
           </div>
   			<nav>
   				<ul className="header-links">
-  					<li><a className="new" onClick={props.addDocument}>+ Add Medical Document</a></li>
+  					<li><Link to="/AddDocument">+ Add Document</Link></li>
+            <li><Link to="/AddVitals">+ Add Vitals</Link></li>
+            <li><Link to="/FileManagement">+ File Management</Link></li>
+            <li><Link to="/Contact">+ Contact</Link></li>
   				</ul>
   			</nav>
   		</header>
