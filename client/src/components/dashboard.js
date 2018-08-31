@@ -15,13 +15,13 @@ class Dashboard extends Component {
         <div className="dashboard">
           <Header />
             <main>
-              <Switch>
-                <Route exact path="/" component={Main} />
-                <Route exact path="/AddDocument" component={AddDocument} />
-                <Route exact path="/AddVitals" component={AddVitals} />
-                <Route exact path="/FileManagement" component={FileManagement} />
-                <Route exact path="/Contact" component={Contact} />
-              </Switch>
+                <Switch>
+                  <Route exact path="/" component={Main}/>
+                  <Route exact path="/AddDocument" component={AddDocument}/>
+                  <Route exact path="/AddVitals" component={AddVitals}/>
+                  <Route exact path="/FileManagement" component={FileManagement}/>
+                  <Route exact path="/Contact" component={Contact}/>
+                </Switch>
             </main>
         </div>
       </Router>
