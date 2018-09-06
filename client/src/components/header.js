@@ -11,7 +11,6 @@ import logo from '../images/logo.svg';
 export default function Header(props){
 
 return (
-  <Router>
     <div>
         <header className="header">
           <img src={logo} className="logo" alt="Chronic Data Logo" height="120"/>
@@ -31,6 +30,5 @@ return (
   			</nav>
   		</header>
     </div>
-  </Router>
     )
 }

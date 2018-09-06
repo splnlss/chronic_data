@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 const bodyParser = require('body-parser')
-const {Documents} = require('./model.js')
+const { Documents } = require('./model.js')
 const passport = require('passport')
 
 const jsonParser = bodyParser.json()
@@ -11,7 +11,7 @@ router.use(jsonParser)
 
 // const jwtAuth = passport.authenticate('jwt', {session: false})
 
-//get documents
+// get documents
 router.get('/', (req, res) => {
   let promise
   if (req.query["searchTerm"]){
@@ -22,20 +22,20 @@ router.get('/', (req, res) => {
     promise = Documents.find()
   }
   promise
-    .then(documents => {
+    .then((documents) => {
       res.json(documents.map(document => document.serialize()))
     })
-    .catch(err => {
+    .catch((err) => {
       console.error(err)
       res.status(500).json({ error: 'error getting documents' })
     })
-})
+});
 
 router.get('/:id', (req,res) => {
   Documents
-      .findById(req.params.id)
-      .then(document => res.json(document.serialize()))
-      .catch(err => {
+    .findById(req.params.id)
+    .then(document => res.json(document.serialize()))
+    .catch(er(err)> {
         console.error(err);
         res.status(500).json({ error: 'error finding by ID' });
       })

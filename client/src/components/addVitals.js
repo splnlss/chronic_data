@@ -1,5 +1,4 @@
 import React from 'react';
-
 export default class AddVitals extends React.Component {
 
     onSubmit(event) {

@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import './dashboard.css';
@@ -17,10 +18,10 @@ class Dashboard extends Component {
             <main>
                 <Switch>
                   <Route exact path="/" component={Main}/>
-                  <Route exact path="/AddDocument" component={AddDocument}/>
-                  <Route exact path="/AddVitals" component={AddVitals}/>
-                  <Route exact path="/FileManagement" component={FileManagement}/>
-                  <Route exact path="/Contact" component={Contact}/>
+                  <Route path="/AddDocument" component={AddDocument}/>
+                  <Route path="/AddVitals" component={AddVitals}/>
+                  <Route path="/FileManagement" component={FileManagement}/>
+                  <Route path="/Contact" component={Contact}/>
                 </Switch>
             </main>
         </div>
