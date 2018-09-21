@@ -25,3 +25,6 @@ cra-server-ex.graffle
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# NOTES
+ChronicDataNotes.txt

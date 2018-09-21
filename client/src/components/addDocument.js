@@ -2,12 +2,9 @@ import React from 'react';
 import './addDocument.css';
 
 export default class AddDocument extends React.Component {
-
     onSubmit(event) {
         event.preventDefault();
     }
-
-
     render() {
 
     return (
@@ -30,7 +27,7 @@ export default class AddDocument extends React.Component {
                     </label>
                   </ul>
                   <ul>
-                    <label>Document 
+                    <label>Document
                         <input type="file" name="document" />
                     </label>
                   </ul>

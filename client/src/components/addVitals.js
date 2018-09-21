@@ -4,9 +4,7 @@ export default class AddVitals extends React.Component {
     onSubmit(event) {
         event.preventDefault();
     }
-
     render() {
-
     return (
           <div className="form">
             <form className="card add-vitals" onSubmit={e => this.onSubmit(e)}>
