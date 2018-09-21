@@ -19,13 +19,9 @@ app.use(morgan('common'))
 app.use(bodyParser.json())
 app.use(express.static('public'))
 
-// passport.use(localStrategy)
-// passport.use(jwtStrategy)
+app.use('/api', index);
+app.use('/api/users', users);
 
-// app.use('/api/user', userRouter)
-// app.use('/api/review/', reviewRouter)
-// app.use('/api/auth/', authRouter)
-// app.use('/api/yelp', yelpRouter)
 
 //middleware to recognize jwt
 // const jwtAuth = passport.authenticate('jwt', { session: false })

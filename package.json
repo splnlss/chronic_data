@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@okta/okta-sdk-nodejs": "^1.2.0",
     "babel-core": "^6.26.3",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
