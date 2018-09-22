@@ -7,10 +7,10 @@ const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 
 const {DATABASE_URL, PORT} = require('./config')
-// const {router:reviewRouter} = require('./review')
-// const {router:userRouter} = require('./user')
+// const {router:index} = require('./')
+ // const {router} = require('/api/routes/')
 // const { router: authRouter, localStrategy, jwtStrategy } = require('./auth');
-// require models
+
 
 const app = express()
 let server
@@ -19,8 +19,14 @@ app.use(morgan('common'))
 app.use(bodyParser.json())
 app.use(express.static('public'))
 
-app.use('/api', index);
-app.use('/api/users', users);
+
+// test route to make sure everything is working (accessed at GET http://localhost:8080/api)
+// router.get('/', function(req, res) {
+//     res.json({ message: 'hooray! welcome to our api!' });
+// });
+//
+// app.use('/api', index);
+// app.use('/api/', users);
 
 
 //middleware to recognize jwt
