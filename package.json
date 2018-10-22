@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@okta/okta-sdk-nodejs": "^1.2.0",
-    "babel-core": "^6.26.3",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
-    "express": "^4.16.3",
-    "mongoose": "^5.2.10",
-    "morgan": "^1.9.0",
-    "npm": "^6.4.0",
-    "request": "^2.88.0"
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.4",
+    "morgan": "^1.9.1",
+    "npm": "^6.4.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "react-scripts": "2.0.3"
   },
   "scripts": {
     "start": "npm run server",
@@ -21,6 +25,9 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "concurrently": "^4.0.0"
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "concurrently": "^4.0.1",
+    "mocha": "^5.2.0"
   }
 }
