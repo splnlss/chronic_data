@@ -37,6 +37,7 @@ app.use(function (req, res, next) {
 
 passport.use(localStrategy);
 passport.use(jwtStrategy);
+passport.use()
 
 app.use('/api/users/', usersRouter);
 app.use('/api/auth/', authRouter);
