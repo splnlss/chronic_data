@@ -14,7 +14,10 @@
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
-    "react-scripts": "2.0.3"
+    "react-scripts": "2.0.3",
+    "sequelize": "^4.41.0",
+    "sequelize-cli": "^5.2.0",
+    "sqlite3": "^4.0.3"
   },
   "scripts": {
     "start": "npm run server",
