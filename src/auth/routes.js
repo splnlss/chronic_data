@@ -10,6 +10,6 @@ module.exports = (app) => {
   app.get('/auth/dropbox/callback', passport.authenticate('dropbox-oauth2', {
     failureRedirect: '/login'
   }), (req, res) => {
-    res.redirect('/protected')
+    res.redirect('/dashboard')
   })
 }

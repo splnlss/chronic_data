@@ -1,4 +1,4 @@
 module.exports = (app) => {
-  require('./users/routes')(app)
-  require('./documents/routes')(app)
+  require('./auth/routes')(app)
+  require('./dashboard/routes')(app)
 }
